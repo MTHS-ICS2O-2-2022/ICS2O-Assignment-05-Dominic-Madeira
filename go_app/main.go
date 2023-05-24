@@ -44,15 +44,15 @@ func main() {
 
 	if numberA > numberB {
 		if answer == 1 {
-			fmt.Print("There is ", answer, " integer between ", numberA, " and ", numberB, ".")
+			fmt.Print("There is ", answer, " different integer between ", numberA, " and ", numberB, ".")
 		} else {
-			fmt.Print("There are ", answer, " integers between ", numberA, " and ", numberB, ".")
-		} 
+			fmt.Print("There are ", answer, " different integers between ", numberA, " and ", numberB, ".")
+		}
 	} else {
 		if answer == 1 {
-			fmt.Print("There is ", answer, " integer between ", numberB, " and ", numberA, ".")
+			fmt.Print("There is ", answer, " different integer between ", numberB, " and ", numberA, ".")
 		} else {
-			fmt.Print("There are ", answer, " integers between ", numberB, " and ", numberA, ".")
+			fmt.Print("There are ", answer, " different integers between ", numberB, " and ", numberA, ".")
 		}
 	}
 	fmt.Println()

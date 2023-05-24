@@ -30,15 +30,15 @@ function myButtonClicked() {
 
   if (numberA > numberB) {
     if (output == 1) {
-      document.getElementById('answer').innerHTML = "There is " + output + " integer between " + numberA + " and " + numberB + "."
+      document.getElementById('answer').innerHTML = "There is " + output + " different integer between " + numberA + " and " + numberB + "."
     } else {
-      document.getElementById('answer').innerHTML = "There are " + output + " integers between " + numberA + " and " + numberB + "."
+      document.getElementById('answer').innerHTML = "There are " + output + " different integers between " + numberA + " and " + numberB + "."
     }
   } else {
     if (output == 1) {
-      document.getElementById('answer').innerHTML = "There is " + output + " integer between " + numberB + " and " + numberA + "."
+      document.getElementById('answer').innerHTML = "There is " + output + " different integer between " + numberB + " and " + numberA + "."
     } else {
-      document.getElementById('answer').innerHTML = "There are " + output + " integers between " + numberB + " and " + numberA + "."
+      document.getElementById('answer').innerHTML = "There are " + output + " different integers between " + numberB + " and " + numberA + "."
     }
   }
 }
