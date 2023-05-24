@@ -13,5 +13,32 @@ if (navigator.serviceWorker) {
 }
 
 function myButtonClicked() {
-  alert("Calculation Failed!!")
+  const numberA = parseInt(document.getElementById('number-a').value)
+  const numberB = parseInt(document.getElementById('number-b').value)
+  let output = 0
+
+ // process
+  if (numberA > numberB) {
+    for (let counter = numberB; counter < numberA; counter++) {
+      output++
+    }
+  } else {
+    for (let counter = numberA; counter < numberB; counter++) {
+      output++
+    }
+  }
+
+  if (numberA > numberB) {
+    if (output == 1) {
+      document.getElementById('answer').innerHTML = "There is " + output + " integer between " + numberA + " and " + numberB + "."
+    } else {
+      document.getElementById('answer').innerHTML = "There are " + output + " integers between " + numberA + " and " + numberB + "."
+    }
+  } else {
+    if (output == 1) {
+      document.getElementById('answer').innerHTML = "There is " + output + " integer between " + numberB + " and " + numberA + "."
+    } else {
+      document.getElementById('answer').innerHTML = "There are " + output + " integers between " + numberB + " and " + numberA + "."
+    }
+  }
 }

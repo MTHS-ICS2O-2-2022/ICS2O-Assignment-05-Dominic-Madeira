@@ -39,40 +39,48 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div>
-          <img src="./images/Calculator-Download-PNG-1.png" alt="calculator" />
-        </div>
-        <form action="#">
-          <div class="page-content">
-            <!--This is the text-->
-            Click the button.
+        <div class="page-content">
+          <!--This is the text-->
+          This website finds the amount of integers between two numbers.
+            <div>
+              <img src="./images/Calculator-Download-PNG-1.png" alt="calculator" />
+            </div>
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <!--This is where they type in the answer-->
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="number-a"
+              />
+              <label class="mdl-textfield__label" for="number-a"
+                >Enter an integer ...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <!--This is where they type in the answer-->
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number-b" />
+              <label class="mdl-textfield__label" for="number-b">Enter a second integer ...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <br />
+          <!-- Colored raised button -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+            onclick="myButtonClicked()"
+          >
+            Calculate
+          </button>
+          <br />
+          <br />
+          <div class="page-content-answer">
+            <div id="answer"></div>
           </div>
-          <div class="mdl-textfield mdl-js-textfield">
-            <!--This is where they type in the answer-->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="age-entered"
-            />
-            <label class="mdl-textfield__label" for="age-entered"
-              >Enter a number ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br />
-        <!-- Colored raised button -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
-          onclick="myButtonClicked()"
-        >
-          Calculate
-        </button>
-        <br />
-        <br />
-        <div class="page-content-answer">
-          <div id="answer">The answer is: ...</div>
         </div>
       </main>
     </div>
